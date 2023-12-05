@@ -58,3 +58,19 @@ devs = ["red", "reddd", "freddy"];
 devs.push("blue");
 
 console.log(devs);
+
+// UNION TYPES
+let mixed: (string | number)[] = [];
+
+// mixed.push(true); booleans arent accepted
+mixed.push(32);
+mixed.push("westttt");
+
+console.log(mixed);
+
+let uid: string | number;
+
+// objects
+let ninjaOne: object;
+ninjaOne = { name: "rexy", age: 34 };
+
