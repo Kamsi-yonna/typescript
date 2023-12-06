@@ -1,0 +1,68 @@
+{
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true
+  },
+  "[sass]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll": false,
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+  "editor.rulers": [120, 150],
+  "editor.wordWrapColumn": 120,
+  "eslint.codeActionsOnSave.mode": "problems",
+  "eslint.format.enable": false,
+  "eslint.run": "onType",
+  "eslint.quiet": false,
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#0d5c55",
+    "activityBar.background": "#0d5c55",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e7",
+    "activityBarBadge.background": "#224fd7",
+    "activityBarBadge.foreground": "#000000",
+    "commandCenter.border": "#e7e7e7",
+    "sash.hoverBorder": "#0d5c55",
+    "statusBar.background": "#0d5c55",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#0d5c55",
+    "statusBarItem.remoteBackground": "#0d5c55",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    "titleBar.activeBackground": "#0d5c55",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#0d5c5599",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  }
+}
