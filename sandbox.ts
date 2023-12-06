@@ -74,3 +74,10 @@ let uid: string | number;
 let ninjaOne: object;
 ninjaOne = { name: "rexy", age: 34 };
 
+console.log(ninjaOne);
+
+let ninjaTwo: {
+  name: string;
+  age: number;
+  isBelt: boolean;
+};
