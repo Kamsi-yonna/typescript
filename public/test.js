@@ -67,3 +67,4 @@
 //   console.log(`${ninja.name} is ${ninja.age} years old.`);
 // };
 // logDetails({ name: "kamsy", age: 23 });
+// ? Dom interaction and typecasting
