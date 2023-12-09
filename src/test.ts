@@ -30,13 +30,33 @@
 // console.log(result);
 
 // * ALLIAS
-const logDetails = (uid: string | number, item: string) => {
-  console.log(`${item} has a uid of ${uid}`);
-};
-logDetails("kamsy", "red");
+// const logDetails = (uid: string | number, item: string) => {
+//   console.log(`${item} has a uid of ${uid}`);
+// };
+// logDetails("kamsy", "red");
 
-const greet = (user: { uid: string | number; string: string }) => {
-  console.log(`${user.name} says hi `);
-};
+// const greet = (user: { name: string | number; string: string }) => {
+//   console.log(`${user.name} says hi `);
+// };
 
-greet();
+// const greetAgain = (user: { name: string | number; string: string }) => {
+//   console.log(`${user.name} says hi `);
+// };
+
+// // Instead of repeating the types in this long mannner, we can give them aliases
+// type StrNum = string | number;
+// type ObjWithName = { name: string; uid: StrNum };
+// //so what we can now have
+
+// const logDetails2 = (uid: StrNum, item: string) => {
+//   console.log(`${item} has a uid of ${uid}`);
+// };
+// logDetails("kamsy", "red");
+
+// const greet2 = (user: ObjWithName) => {
+//   console.log(`${user.name} says hi `);
+// };
+
+// const greetAgain2 = (user: ObjWithName) => {
+//   console.log(`${user.name} says hi `);
+// };
