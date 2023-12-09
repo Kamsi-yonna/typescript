@@ -62,27 +62,29 @@
 // };
 
 // * Function signatures - the general type of a signature, the type of data it takes in and what it returns
-let greet: (a: string, b: string) => void;
+// let greet: (a: string, b: string) => void;
 
-greet = (name: string, age: string) => {
-  console.log(`${name} says  ${age}`);
-};
+// greet = (name: string, age: string) => {
+//   console.log(`${name} says  ${age}`);
+// };
 
-greet("kamsy", "rest");
+// greet("kamsy", "rest");
 
-let calc: (a: number, b: number, c: string) => number;
+// let calc: (a: number, b: number, c: string) => number;
 
-calc = (numOne: number, numTwo: number, action: string) => {
-  if (action === "any") {
-    return numOne + numTwo;
-  } else {
-    return numOne + numTwo;
-  }
-};
+// calc = (numOne: number, numTwo: number, action: string) => {
+//   if (action === "any") {
+//     return numOne + numTwo;
+//   } else {
+//     return numOne + numTwo;
+//   }
+// };
 
-// example 3
-let logDetails: (obj: { name: string; age: number }) => void;
-logDetails = (ninja: { name: string; age: number }) => {
-  console.log(`${ninja.name} is ${ninja.age} years old.`);
-};
-logDetails({ name: "kamsy", age: 23 });
+// // example 3
+// let logDetails: (obj: { name: string; age: number }) => void;
+// logDetails = (ninja: { name: string; age: number }) => {
+//   console.log(`${ninja.name} is ${ninja.age} years old.`);
+// };
+// logDetails({ name: "kamsy", age: 23 });
+
+// ? Dom interaction and typecasting
