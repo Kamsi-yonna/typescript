@@ -29,29 +29,29 @@
 // mixed[0] = 34;
 // console.log(mixed);
 //EXPLOICIT TYPES
-// SETTING THE TYPES
+// ! SETTING THE TYPES
 // let character: string;
 // let age: number;
 // let isLoggedIn: boolean;
-// // age = "red";
+// age = "red";
 // age = 32;
-// // isLoggedIn = 34
+// isLoggedIn = 34
 // isLoggedIn = true;
-// // foor arrays
+// * for arrays
 // let devs: string[];
-// // let devs: string[] = []; initializes the devs array to an empty array
+// let devs: string[] = []; initializes the devs array to an empty array
 // devs = ["red", "reddd", "freddy"];
-// // devs = [34, 23, 4332]; error
+// devs = [34, 23, 4332]; error
 // devs.push("blue");
 // console.log(devs);
-// // UNION TYPES
+// UNION TYPES
 // let mixed: (string | number)[] = [];
-// // mixed.push(true); booleans arent accepted
+// mixed.push(true); booleans arent accepted
 // mixed.push(32);
 // mixed.push("westttt");
 // console.log(mixed);
 // let uid: string | number;
-// // objects
+// objects
 // let ninjaOne: object;
 // ninjaOne = { name: "rexy", age: 34 };
 // console.log(ninjaOne);
@@ -60,5 +60,3 @@
 //   age: number;
 //   isBelt: boolean;
 // };
-// ADDING THE TSCONFIG.JSON FILE
-console.log("test");

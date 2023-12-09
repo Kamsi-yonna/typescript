@@ -23,11 +23,48 @@
 // let result = minus(5, 2);
 // console.log(result);
 // * ALLIAS
-const logDetails = (uid, item) => {
-    console.log(`${item} has a uid of ${uid}`);
+// const logDetails = (uid: string | number, item: string) => {
+//   console.log(`${item} has a uid of ${uid}`);
+// };
+// logDetails("kamsy", "red");
+// const greet = (user: { name: string | number; string: string }) => {
+//   console.log(`${user.name} says hi `);
+// };
+// const greetAgain = (user: { name: string | number; string: string }) => {
+//   console.log(`${user.name} says hi `);
+// };
+// // Instead of repeating the types in this long mannner, we can give them aliases
+// type StrNum = string | number;
+// type ObjWithName = { name: string; uid: StrNum };
+// //so what we can now have
+// const logDetails2 = (uid: StrNum, item: string) => {
+//   console.log(`${item} has a uid of ${uid}`);
+// };
+// logDetails("kamsy", "red");
+// const greet2 = (user: ObjWithName) => {
+//   console.log(`${user.name} says hi `);
+// };
+// const greetAgain2 = (user: ObjWithName) => {
+//   console.log(`${user.name} says hi `);
+// };
+// * Function signatures - the general type of a signature, the type of data it takes in and what it returns
+let greet;
+greet = (name, age) => {
+    console.log(`${name} says  ${age}`);
 };
-logDetails("kamsy", "red");
-const greet = (user) => {
-    console.log(`${user.name} says hi `);
+greet("kamsy", "rest");
+let calc;
+calc = (numOne, numTwo, action) => {
+    if (action === "any") {
+        return numOne + numTwo;
+    }
+    else {
+        return numOne + numTwo;
+    }
 };
-greet();
+// example 3
+let logDetails;
+logDetails = (ninja) => {
+    console.log(`${ninja.name} is ${ninja.age} years old.`);
+};
+logDetails({ name: "kamsy", age: 23 });

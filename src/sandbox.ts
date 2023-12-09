@@ -38,46 +38,46 @@
 // console.log(mixed);
 
 //EXPLOICIT TYPES
-// SETTING THE TYPES
-let character: string;
-let age: number;
-let isLoggedIn: boolean;
+// ! SETTING THE TYPES
+// let character: string;
+// let age: number;
+// let isLoggedIn: boolean;
 
 // age = "red";
-age = 32;
+// age = 32;
 
 // isLoggedIn = 34
-isLoggedIn = true;
+// isLoggedIn = true;
 
-// foor arrays
-let devs: string[];
+// * for arrays
+// let devs: string[];
 // let devs: string[] = []; initializes the devs array to an empty array
 
-devs = ["red", "reddd", "freddy"];
+// devs = ["red", "reddd", "freddy"];
 // devs = [34, 23, 4332]; error
-devs.push("blue");
+// devs.push("blue");
 
-console.log(devs);
+// console.log(devs);
 
 // UNION TYPES
-let mixed: (string | number)[] = [];
+// let mixed: (string | number)[] = [];
 
 // mixed.push(true); booleans arent accepted
-mixed.push(32);
-mixed.push("westttt");
+// mixed.push(32);
+// mixed.push("westttt");
 
-console.log(mixed);
+// console.log(mixed);
 
-let uid: string | number;
+// let uid: string | number;
 
 // objects
-let ninjaOne: object;
-ninjaOne = { name: "rexy", age: 34 };
+// let ninjaOne: object;
+// ninjaOne = { name: "rexy", age: 34 };
 
-console.log(ninjaOne);
+// console.log(ninjaOne);
 
-let ninjaTwo: {
-  name: string;
-  age: number;
-  isBelt: boolean;
-};
+// let ninjaTwo: {
+//   name: string;
+//   age: number;
+//   isBelt: boolean;
+// };
