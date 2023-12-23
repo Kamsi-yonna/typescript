@@ -3,7 +3,7 @@ import { hasFormatter } from "../interfaces/hasFormatter";
 export class listTemplate {
   constructor(private container: HTMLUListElement) {}
 
-  render(item: hasFormatter, heading: string, pos: "start" | "stop") {
+  render(item: hasFormatter, heading: string, pos: "start" | "end") {
     const li = document.createElement("li");
 
     const h4 = document.createElement("h4");

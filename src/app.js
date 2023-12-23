@@ -1,7 +1,9 @@
 "strict mode";
-import { Invoice } from "./classes/invoice.js";
-import { listTemplate } from "./classes/listTemplate.js";
-import { Payment } from "./classes/payment.js";
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var invoice_js_1 = require("./classes/invoice.js");
+var listTemplate_js_1 = require("./classes/listTemplate.js");
+var payment_js_1 = require("./classes/payment.js");
 // ? INTERFACES
 // its used to enforce the structure of an object or class
 // interface isPerson {
@@ -71,26 +73,26 @@ import { Payment } from "./classes/payment.js";
 // console.log(anchor.href);
 //* The ! means we are sure we would get a value.
 // const form = document.querySelector("form")!;
-const form = document.querySelector(".new-item-form");
+var form = document.querySelector(".new-item-form");
 // console.log(form.children);
 // inputs
-const type = document.querySelector("#type");
-const toFrom = document.querySelector("#toFrom");
-const details = document.querySelector("#details");
-const amount = document.querySelector("#amount");
+var type = document.querySelector("#type");
+var toFrom = document.querySelector("#toFrom");
+var details = document.querySelector("#details");
+var amount = document.querySelector("#amount");
 //List template instance
-const ul = document.querySelector("ul");
-const list = new listTemplate(ul);
-form.addEventListener("submit", (e) => {
+var ul = document.querySelector("ul");
+var list = new listTemplate_js_1.listTemplate(ul);
+form.addEventListener("submit", function (e) {
     e.preventDefault();
     // console.log(type.value, toFrom.value, details.value, amount.valueAsNumber);
-    let doc;
+    var doc;
     if (type.value === "invoice") {
-        doc = new Invoice(toFrom.value, details.value, amount.valueAsNumber);
+        doc = new invoice_js_1.Invoice(toFrom.value, details.value, amount.valueAsNumber);
     }
     else {
-        doc = new Payment(toFrom.value, details.value, amount.valueAsNumber);
+        doc = new payment_js_1.Payment(toFrom.value, details.value, amount.valueAsNumber);
     }
-    // console.log(doc);
+    console.log(doc);
     list.render(doc, type.value, "end");
 });

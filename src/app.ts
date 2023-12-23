@@ -1,6 +1,7 @@
 "strict mode";
 
 import { Invoice } from "./classes/invoice.js";
+import { listTemplate } from "./classes/listTemplate.js";
 import { Payment } from "./classes/payment.js";
 import { hasFormatter } from "./interfaces/hasFormatter.js";
 
@@ -97,6 +98,10 @@ const toFrom = document.querySelector("#toFrom") as HTMLInputElement;
 const details = document.querySelector("#details") as HTMLInputElement;
 const amount = document.querySelector("#amount") as HTMLInputElement;
 
+//List template instance
+const ul = document.querySelector("ul")!;
+const list = new listTemplate(ul);
+
 form.addEventListener("submit", (e: Event) => {
   e.preventDefault();
   // console.log(type.value, toFrom.value, details.value, amount.valueAsNumber);
@@ -106,5 +111,7 @@ form.addEventListener("submit", (e: Event) => {
   } else {
     doc = new Payment(toFrom.value, details.value, amount.valueAsNumber);
   }
-  console.log(doc);
+  // console.log(doc);
+
+  list.render(doc, type.value, "end");
 });
