@@ -1,24 +1,20 @@
 "strict mode";
-// * CLASSES
-// A class is a blue print for an object
-class Invoice {
-  client: string;
-  details: string;
-  amount: number;
-
-  constructor(c: string, d: string, a: number) {
-    (this.client = c), (this.details = d), (this.amount = a);
-  }
-
-  format() {
-    return `${this.client} owes $${this.amount} for ${this.details}`;
-  }
-}
+import { Invoice } from "./classes/invoice.js";
 
 const invOne = new Invoice("Kamsy", "for balling", 500);
 const invTwo = new Invoice("Lanre", "for relationship", 900);
 
 console.log(invOne, invTwo);
+
+let invoices: Invoice[] = [];
+invoices.push(invOne);
+// invoices.push(invTwo);
+
+invoices.forEach((inv) => {
+  console.log(inv.client, inv.details, inv.amount, inv.format());
+});
+
+// ! FORM
 
 let Invoices: Invoice[] = [];
 Invoices.push(invOne, invTwo);

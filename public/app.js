@@ -1,6 +1,6 @@
 "use strict";
 "strict mode";
-// * CLASSES
+// ! CLASSES
 // A class is a blue print for an object
 class Invoice {
     constructor(c, d, a) {
@@ -13,6 +13,13 @@ class Invoice {
 const invOne = new Invoice("Kamsy", "for balling", 500);
 const invTwo = new Invoice("Lanre", "for relationship", 900);
 console.log(invOne, invTwo);
+let invoices = [];
+invoices.push(invOne);
+// invoices.push(invTwo);
+invoices.forEach((inv) => {
+    console.log(inv.client, inv.details, inv.amount, inv.format());
+});
+// ! FORM
 let Invoices = [];
 Invoices.push(invOne, invTwo);
 invOne.amount = 100000;
