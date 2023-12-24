@@ -101,13 +101,23 @@ const addUID = (obj) => {
 };
 let docOne = addUID({ name: "Kamsy", age: 25 });
 console.log(docOne.name);
+//? ENUMS
+var resourceType;
+(function (resourceType) {
+    resourceType[resourceType["BOOK"] = 0] = "BOOK";
+    resourceType[resourceType["AUTHOR"] = 1] = "AUTHOR";
+    resourceType[resourceType["NUMBER"] = 2] = "NUMBER";
+    resourceType[resourceType["PASTOR"] = 3] = "PASTOR";
+    resourceType[resourceType["JEANS"] = 4] = "JEANS";
+})(resourceType || (resourceType = {}));
 const docTwos = {
     uid: 1,
-    resourceName: "New res",
+    resourceName: resourceType.AUTHOR,
     data: { name: "Kamsiyonna" },
 };
 const docFour = {
     uid: 3,
-    resourceName: "Extraa res",
+    resourceName: resourceType.JEANS,
     data: ["kam", "is", "cool"],
 };
+console.log(docTwos, docFour);
